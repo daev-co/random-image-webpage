@@ -1,3 +1,3 @@
-# random-halloween
+# random-image-webpage
 
-Halloween project for 2021. Nothing to see here.
+Put up a random image each time a webpage is visited.
