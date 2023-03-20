@@ -9,7 +9,7 @@
                 "logDriver": "awslogs",
                 "secretOptions": null,
                 "options": {
-                    "awslogs-group": "/ecs/daevski-random-halloween-ecs-task-definition",
+                    "awslogs-group": "/ecs/daevco-random-image-webpage-ecs-task-definition",
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
                 }
@@ -37,7 +37,7 @@
             "memoryReservation": null,
             "volumesFrom": [],
             "stopTimeout": 30,
-            "image": "125765595335.dkr.ecr.us-east-1.amazonaws.com/random-halloween:731e7a897ee15d3993c8809ce77ef3df7cdabc1a",
+            "image": "125765595335.dkr.ecr.us-east-1.amazonaws.com/random-image-webpage:731e7a897ee15d3993c8809ce77ef3df7cdabc1a",
             "startTimeout": 30,
             "firelensConfiguration": null,
             "dependsOn": null,
@@ -54,7 +54,7 @@
             "dockerLabels": null,
             "systemControls": null,
             "privileged": null,
-            "name": "daevski-random-halloween-ecs-fargate-container"
+            "name": "daevco-random-image-webpage-ecs-fargate-container"
         }
     ],
     "placementConstraints": [],
@@ -64,8 +64,8 @@
         "EC2",
         "FARGATE"
     ],
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:125765595335:task-definition/daevski-random-halloween-ecs-task-definition:1",
-    "family": "daevski-random-halloween-ecs-task-definition",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:125765595335:task-definition/daevco-random-image-webpage-ecs-task-definition:1",
+    "family": "daevco-random-image-webpage-ecs-task-definition",
     "requiresAttributes": [
         {
             "targetId": null,

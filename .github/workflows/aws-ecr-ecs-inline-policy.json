@@ -26,7 +26,7 @@
                 "ecr:PutImage",
                 "ecr:UploadLayerPart"
             ],
-            "Resource": "arn:aws:ecr:us-east-1:${var.account-id}:repository/random-halloween-ecs-repository"
+            "Resource": "arn:aws:ecr:us-east-1:${var.account-id}:repository/random-image-webpage-ecs-repository"
         },
         {
             "Sid": "EcsNginxService1",
@@ -34,7 +34,7 @@
             "Action": [
                 "ecs:UpdateService"
             ],
-            "Resource": "arn:aws:ecs:${var.account-id}:service/daevski-random-halloween-ecs-fargate-cluster/nginx-service"
+            "Resource": "arn:aws:ecs:${var.account-id}:service/daevco-random-image-webpage-ecs-fargate-cluster/nginx-service"
         }
     ]
 }
