@@ -21,8 +21,8 @@ def root(request: Request):
     if len(images) < 1:
         return 'No images found!'
 
-    spooky_number: int = app_random.get_spooky_number(1, len(images) - 1)
-    selection: Path = images[spooky_number]
+    rand_number: int = app_random.get_rand_number(1, len(images) - 1)
+    selection: Path = images[rand_number]
     return templates.TemplateResponse(
         "index.html",
         {
