@@ -22,7 +22,8 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/daevco-random-image-webpage-ecs-task-definition",
+                    "awslogs-group": "/ecs/daevco-random-image-webpage-ecs-logging-group",
+                    "awslogs-create-group": "true",
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
                 }
