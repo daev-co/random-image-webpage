@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:125765595335:task-definition/daevco-random-image-webpage-ecs-task-definition:2",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:125765595335:task-definition/daevco-random-image-webpage-ecs-task-definition:7",
     "containerDefinitions": [
         {
             "name": "daevco-random-image-webpage-ecs-fargate-container",
-            "image": "125765595335.dkr.ecr.us-east-1.amazonaws.com/random-image-webpage:b5c530b798d7cce4e70e1710fa481cac684b6ebe",
+            "image": "125765595335.dkr.ecr.us-east-1.amazonaws.com/random-image-webpage:111de9b09acaa7902b4f5818b7a4831632e33f02",
             "cpu": 256,
             "memory": 300,
             "portMappings": [
@@ -22,8 +22,8 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/daevco-random-image-webpage-ecs-logging-group",
                     "awslogs-create-group": "true",
+                    "awslogs-group": "/ecs/daevco-random-image-webpage-ecs-logging-group",
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
                 }
@@ -34,7 +34,7 @@
     "taskRoleArn": "arn:aws:iam::125765595335:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::125765595335:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 2,
+    "revision": 7,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -64,6 +64,9 @@
         },
         {
             "name": "ecs.capability.task-eni"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
         }
     ],
     "placementConstraints": [],
@@ -76,7 +79,7 @@
     ],
     "cpu": "256",
     "memory": "512",
-    "registeredAt": "2023-03-26T15:54:27.706Z",
+    "registeredAt": "2023-03-26T20:07:43.751Z",
     "registeredBy": "arn:aws:iam::125765595335:user/daevco-random-image-website-deploy-user",
     "tags": []
 }
