@@ -2,7 +2,7 @@
     "family": "daevco-random-image-webpage-ecs-task-definition-whealth",
     "containerDefinitions": [
         {
-            "name": "random-image-webpage",
+            "name": "daevco-random-image-webpage-ecs-fargate-container",
             "image": "125765595335.dkr.ecr.us-east-1.amazonaws.com/random-image-webpage:b5b3751f2d9df8fdaf5174947d41bf2153605d20",
             "cpu": 0,
             "portMappings": [
