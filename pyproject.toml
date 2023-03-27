@@ -5,7 +5,7 @@ description = ""
 authors = ["David McKee <daevski@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.9"
 fastapi = "^0.68.1"
 aiofiles = "^0.7.0"
 uvicorn = "^0.15.0"

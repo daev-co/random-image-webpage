@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:125765595335:task-definition/daevco-random-image-webpage-ecs-task-definition:7",
+    "family": "daevco-random-image-webpage-ecs-task-definition",
     "containerDefinitions": [
         {
             "name": "daevco-random-image-webpage-ecs-fargate-container",
-            "image": "125765595335.dkr.ecr.us-east-1.amazonaws.com/random-image-webpage:111de9b09acaa7902b4f5818b7a4831632e33f02",
+            "image": "125765595335.dkr.ecr.us-east-1.amazonaws.com/random-image-webpage:a3a02850d319f330090cbb321bcf481b2230c7ba",
             "cpu": 256,
             "memory": 300,
             "portMappings": [
@@ -29,56 +29,12 @@
             }
         }
     ],
-    "family": "daevco-random-image-webpage-ecs-task-definition",
     "taskRoleArn": "arn:aws:iam::125765595335:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::125765595335:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 7,
-    "volumes": [],
-    "status": "ACTIVE",
-    "requiresAttributes": [
-        {
-            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
-        },
-        {
-            "name": "ecs.capability.execution-role-awslogs"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.ecr-auth"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.task-iam-role"
-        },
-        {
-            "name": "ecs.capability.container-ordering"
-        },
-        {
-            "name": "ecs.capability.execution-role-ecr-pull"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
-        },
-        {
-            "name": "ecs.capability.task-eni"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
-        }
-    ],
-    "placementConstraints": [],
-    "compatibilities": [
-        "EC2",
-        "FARGATE"
-    ],
     "requiresCompatibilities": [
         "FARGATE"
     ],
     "cpu": "256",
-    "memory": "512",
-    "registeredAt": "2023-03-26T20:07:43.751Z",
-    "registeredBy": "arn:aws:iam::125765595335:user/daevco-random-image-website-deploy-user",
-    "tags": []
+    "memory": "512"
 }
