@@ -52,16 +52,6 @@
       "Resource": [
         "arn:aws:ecs:us-east-1:125765595335:service/daevco-random-image-webpage-ecs-fargate-cluster/*"
       ]
-    },
-    {
-      "Sid": "CreateLoggingGroup",
-      "Effect": "Allow",
-      "Action": [
-        "logs:CreateLogGroup"
-      ],
-      "Resource": [
-        "arn:aws:logs:us-east-1:125765595335:log-group:/ecs/daevco-random-image-webpage-ecs-logging-group:log-stream"
-      ]
     }
   ]
 }
