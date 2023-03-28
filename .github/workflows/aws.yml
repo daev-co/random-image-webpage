@@ -69,7 +69,7 @@ jobs:
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
           task-definition: .github/workflows/aws-ecs-task-definition.json
-          container-name: daevco-random-image-webpage-ecs-fargate-container
+          container-name: daevco-random-image-webpage-ecs-container
           image: ${{ steps.build-image.outputs.image }}
 
       - name: Deploy Amazon ECS task definition
