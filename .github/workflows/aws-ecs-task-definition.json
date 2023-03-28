@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "daevco-random-image-webpage-ecs-container",
-            "image": "125765595335.dkr.ecr.us-east-1.amazonaws.com/random-image-webpage:aa14fed479ea599257e245024126c5b7c661a902",
+            "image": "125765595335.dkr.ecr.us-east-1.amazonaws.com/random-image-webpage:9a630d4cd60f21b8a0e89bdffbface65465543f3",
             "cpu": 0,
             "portMappings": [
                 {
@@ -29,7 +29,7 @@
             "healthCheck": {
                 "command": [
                     "CMD-SHELL",
-                    "curl -f https://localhost/ || exit 1"
+                    "curl -f http://localhost/ || exit 1"
                 ],
                 "interval": 5,
                 "timeout": 10,
