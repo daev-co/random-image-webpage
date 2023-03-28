@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "daevco-random-image-webpage-ecs-container",
-            "image": "125765595335.dkr.ecr.us-east-1.amazonaws.com/random-image-webpage:ed93fb41ba94d9a61920b3df684e2e8d5a7cc2bd",
+            "image": "125765595335.dkr.ecr.us-east-1.amazonaws.com/random-image-webpage:aa14fed479ea599257e245024126c5b7c661a902",
             "cpu": 0,
             "portMappings": [
                 {
@@ -16,7 +16,6 @@
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
             "logConfiguration": {
@@ -30,7 +29,7 @@
             "healthCheck": {
                 "command": [
                     "CMD-SHELL",
-                    "curl -f http://localhost/ || exit 1"
+                    "curl -f https://localhost/ || exit 1"
                 ],
                 "interval": 5,
                 "timeout": 10,
