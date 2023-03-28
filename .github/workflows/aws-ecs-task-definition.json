@@ -2,14 +2,14 @@
     "family": "daevco-random-image-webpage-ecs-task-definition-whealth",
     "containerDefinitions": [
         {
-            "name": "daevco-random-image-webpage-ecs-fargate-container",
+            "name": "daevco-random-image-webpage-ecs-fargate-container443",
             "image": "125765595335.dkr.ecr.us-east-1.amazonaws.com/random-image-webpage:b5b3751f2d9df8fdaf5174947d41bf2153605d20",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "random-image-webpage-80-tcp",
-                    "containerPort": 80,
-                    "hostPort": 80,
+                    "name": "random-image-webpage-443-tcp",
+                    "containerPort": 443,
+                    "hostPort": 443,
                     "protocol": "tcp",
                     "appProtocol": "http"
                 }
