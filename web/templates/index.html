@@ -29,13 +29,42 @@
             max-height: 90%;
             object-fit: contain;
         }
+        button {
+            color: #ffffff;
+            background-color: #2d63c8;
+            font-size: 19px;
+            border: 1px solid #2d63c8;
+            padding: 15px 50px;
+            cursor: pointer
+        }
+        button:hover {
+            color: #2d63c8;
+            background-color: #ffffff;
+        }
+        .container {
+            height: 76px;
+            position: relative;
+        }
+
+        .vertical-center {
+            margin: 0 auto;
+            position: absolute;
+            width: 100%;
+        }
     </style>
 </head>
 
 <body>
     <div class="box">
-        <h1>{{ selection_title }}</h1>
-        <img src="{{ url_for('static', path='/img/') }}{{selection_filename}}" alt="">
+        <!-- <h1>{{ selection_title }}</h1> -->
+        <div style="min-height: 50%;">
+            <img style="max-width: 480px;" src="{{ url_for('static', path='/img/') }}{{selection_filename}}" alt="">
+        </div>
+        <div class="container">
+            <div class="vertical-center">
+                <button onClick="window.location.reload();">Refresh Page</button>
+            </div>
+        </div>
     </div>
 </body>
 
